@@ -10,7 +10,7 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/receta-service/receta-service/Receta-service" />
-        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="gradleJvm" value="ms-17" />
       </GradleProjectSettings>
     </option>
   </component>

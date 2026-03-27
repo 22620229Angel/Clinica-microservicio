@@ -2,7 +2,7 @@ package com.hospital.receta.controller;
 
 import com.hospital.receta.model.Receta;
 import com.hospital.receta.service.RecetaService;
-import org.hibernate.mapping.List;
+import java.util.List;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +18,7 @@ public class RecetaController {
     }
 
     @GetMapping
+    // 2. CORRECCIÓN: El tipo de retorno debe ser List<Receta>
     public ResponseEntity<List<Receta>> obtenerTodas() {
         return ResponseEntity.ok(recetaService.obtenerTodas());
     }
@@ -44,9 +45,8 @@ public class RecetaController {
     }
 
     @GetMapping("/paciente/{pacienteId}")
+    // 3. CORRECCIÓN: Aquí también debe ser List<Receta>
     public ResponseEntity<List<Receta>> obtenerPorPaciente(@PathVariable Long pacienteId) {
-        // Usamos el service, NO la clase Repository directamente
         return ResponseEntity.ok(recetaService.obtenerPorPaciente(pacienteId));
     }
 }
-
