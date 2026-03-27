@@ -29,7 +29,6 @@
         <module>cita-service</module>
         <module>doctor-service</module>
         <module>eureka-server</module>
-        <module>historial-service</module>
         <module>paciente-service</module>
         <module>receta-service</module>
     </modules>

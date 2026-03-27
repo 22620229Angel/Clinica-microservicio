@@ -2,9 +2,11 @@ package com.hospital.receta.service;
 
 import com.hospital.receta.model.Receta;
 import com.hospital.receta.repository.RecetaRepository;
+import org.hibernate.mapping.List;
 import org.springframework.stereotype.Service;
+
 import java.time.LocalDate;
-import java.util.List;
+
 
 @Service
 public class RecetaService {

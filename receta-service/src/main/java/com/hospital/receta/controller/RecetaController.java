@@ -1,12 +1,11 @@
 package com.hospital.receta.controller;
 
 import com.hospital.receta.model.Receta;
-import com.hospital.receta.repository.RecetaRepository;
 import com.hospital.receta.service.RecetaService;
+import org.hibernate.mapping.List;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import java.util.List;
 
 @RestController
 @RequestMapping("/api/recetas")
